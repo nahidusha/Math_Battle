@@ -14,6 +14,11 @@ class MathBattle(QtWidgets.QMainWindow):
         loadUi('gui/mainpage.ui', self)
         # showing the windows
         self.show()
+    
+    def loadElements(self):
+        pass
+        # deshboard section
+        # Math Battle section
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
