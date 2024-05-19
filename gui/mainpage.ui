@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>564</width>
-    <height>516</height>
+    <width>566</width>
+    <height>523</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QFrame" name="frame">
+     <widget class="QFrame" name="frame_dash_board">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -71,14 +71,14 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="label_rank1_name">
          <property name="text">
           <string>Name:</string>
          </property>
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="label_rank1_score">
          <property name="text">
           <string>Score:</string>
          </property>
@@ -99,14 +99,14 @@
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QLabel" name="label_7">
+        <widget class="QLabel" name="label_rank2_name">
          <property name="text">
           <string>Name:</string>
          </property>
         </widget>
        </item>
        <item row="6" column="0">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="label_rank2_score">
          <property name="text">
           <string>Score:</string>
          </property>
@@ -127,21 +127,21 @@
         </widget>
        </item>
        <item row="8" column="0">
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="label_rank3_name">
          <property name="text">
           <string>Name:</string>
          </property>
         </widget>
        </item>
        <item row="9" column="0">
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="label_rank3_score">
          <property name="text">
           <string>Score:</string>
          </property>
         </widget>
        </item>
        <item row="10" column="0">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pushButton_reset_rank">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(0, 112, 0);
 color: rgb(255, 255, 255);</string>
@@ -208,7 +208,7 @@ color: rgb(255, 255, 255);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_2">
+                <widget class="QLineEdit" name="lineEdit_player_name">
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -259,7 +259,7 @@ color: rgb(255, 255, 255);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="QLabel" name="label_18">
+                <widget class="QLabel" name="label_score">
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
@@ -336,7 +336,7 @@ color: rgb(255, 255, 255);</string>
                   </spacer>
                  </item>
                  <item>
-                  <widget class="QLabel" name="label_15">
+                  <widget class="QLabel" name="label_expression">
                    <property name="font">
                     <font>
                      <pointsize>11</pointsize>
@@ -409,7 +409,7 @@ color: rgb(255, 255, 255);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit">
+                <widget class="QLineEdit" name="lineEdit_answer">
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -437,7 +437,7 @@ color: rgb(255, 255, 255);</string>
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="pushButton_start">
              <property name="text">
               <string>Start</string>
              </property>
@@ -457,7 +457,7 @@ color: rgb(255, 255, 255);</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="pushButton_end">
              <property name="text">
               <string>End</string>
              </property>
@@ -485,7 +485,7 @@ color: rgb(255, 255, 255);</string>
           </widget>
          </item>
          <item>
-          <widget class="QLCDNumber" name="lcdNumber">
+          <widget class="QLCDNumber" name="lcdNumber_time">
            <property name="font">
             <font>
              <weight>75</weight>
@@ -568,7 +568,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>564</width>
+     <width>566</width>
      <height>22</height>
     </rect>
    </property>

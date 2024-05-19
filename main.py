@@ -14,11 +14,22 @@ class MathBattle(QtWidgets.QMainWindow):
         loadUi('gui/mainpage.ui', self)
         # showing the windows
         self.show()
-    
+        self.loadElements()
+
     def loadElements(self):
-        pass
         # deshboard section
-        # Math Battle section
+        self.dash_board = {}
+        element_names = ['label_rank1_name', 'label_rank1_score', 'label_rank2_name', 'label_rank2_score', 'label_rank3_name', 'label_rank3_score']
+        for ele in element_names:
+            self.dash_board[ele] = self.findChild(
+                QtWidgets.QLabel, ele
+            )
+        self.dash_board["pushButton_reset"] = self.findChild(
+            QtWidgets.QPushButton, "pushButton_reset"
+        )
+
+        # Math Battle Section
+        
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
