@@ -1,0 +1,22 @@
+gamer_names = [
+    "ShadowFury",
+    "DragonKnight",
+    "BlazeStorm",
+    "MysticSage",
+    "CyberHawk",
+    "VoidReaper",
+    "NeonSpectre",
+    "RoguePhantom",
+    "StarBlade",
+    "LunarWraith",
+    "InfernoCrusader",
+    "VenomStrike",
+    "ThunderWolf",
+    "AquaPulse",
+    "GlacierGuard",
+    "SolarEclipse",
+    "SteelViper",
+    "CrimsonShadow",
+    "QuantumFrost",
+    "PhantomEcho"
+]
