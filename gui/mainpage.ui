@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>566</width>
-    <height>523</height>
+    <width>564</width>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -141,7 +141,7 @@
         </widget>
        </item>
        <item row="10" column="0">
-        <widget class="QPushButton" name="pushButton_reset_rank">
+        <widget class="QPushButton" name="pushButton_reset">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(0, 112, 0);
 color: rgb(255, 255, 255);</string>
@@ -415,7 +415,98 @@ color: rgb(255, 255, 255);</string>
                  </property>
                 </widget>
                </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_check">
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 170, 127);</string>
+                 </property>
+                 <property name="text">
+                  <string>Check</string>
+                 </property>
+                </widget>
+               </item>
               </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Status: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_status">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Waiting</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
              </item>
             </layout>
            </item>
@@ -438,6 +529,15 @@ color: rgb(255, 255, 255);</string>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
             <widget class="QPushButton" name="pushButton_start">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(76, 148, 255);</string>
+             </property>
              <property name="text">
               <string>Start</string>
              </property>
@@ -458,6 +558,15 @@ color: rgb(255, 255, 255);</string>
            </item>
            <item>
             <widget class="QPushButton" name="pushButton_end">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 93, 60);</string>
+             </property>
              <property name="text">
               <string>End</string>
              </property>
@@ -568,7 +677,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>566</width>
+     <width>564</width>
      <height>22</height>
     </rect>
    </property>
