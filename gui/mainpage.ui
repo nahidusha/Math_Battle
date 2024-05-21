@@ -268,7 +268,7 @@ color: rgb(255, 255, 255);</string>
                   </font>
                  </property>
                  <property name="text">
-                  <string>X</string>
+                  <string>0</string>
                  </property>
                 </widget>
                </item>
@@ -417,6 +417,9 @@ color: rgb(255, 255, 255);</string>
                </item>
                <item>
                 <widget class="QPushButton" name="pushButton_check">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
                  <property name="font">
                   <font>
                    <weight>75</weight>
