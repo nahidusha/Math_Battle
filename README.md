@@ -1,6 +1,6 @@
 # Math Battle
 Web_liveLink : https://664da148ed8914b531c5566a--nimble-sprinkles-df5d70.netlify.app/
-Math Battle is an engaging arithmetic game where users must quickly solve mathematical expressions involving addition, subtraction, multiplication, and division. The game is designed to progressively increase in difficulty, challenging users to improve their mental math skills. Players compete to achieve the highest scores, with the top three performers prominently displayed.
+   Math Battle is an engaging arithmetic game where users must quickly solve mathematical expressions involving addition, subtraction, multiplication, and division. The game is designed to progressively increase in difficulty, challenging users to improve their mental math skills. Players compete to achieve the highest scores, with the top three performers prominently displayed.
 ![image](https://github.com/mursalatul/Math_Battle/assets/79168756/4f245191-0ea2-4379-ac84-cfe2cf9fea1e)
 
 
