@@ -20,6 +20,7 @@ class MathBattle(QtWidgets.QMainWindow):
         # showing the windows
         self.show()
         self.loadElements()
+        self.updateRank()
 
         # setting a gamer name randomly
         self.math_battle["lineEdit_player_name"].setText(random.choice(gamer_names))
@@ -139,12 +140,58 @@ class MathBattle(QtWidgets.QMainWindow):
             pass
         finally:
             self.showFinalResult()
+            # save game score in the rank section
+            self.updateRank()
             self.reset()
             # enable startButton
             self.math_battle["pushButton_start"].setEnabled(True)
             # disable check button
             self.math_battle["pushButton_check"].setEnabled(False)
     
+    def updateRank(self):
+        """
+        update the rank based on previous rank score and present score
+        """
+        # save the new rank in the ranks.txt file
+        name = self.math_battle["lineEdit_player_name"].text()
+        score = self.getScore()
+        with open('ranks.txt', 'a') as file:
+            file.write(str(name) + '\n')
+            file.write(str(score) + '\n')
+        
+        # get the datas in the list to sort it
+        l = []
+        with open('ranks.txt', 'r') as file:
+            tracker = 1
+            temp = []
+            for f in file:
+                temp.append(f.strip())
+                if tracker % 2 == 0:
+                    l.append(temp.copy())
+                    temp.clear()
+                    tracker = 1
+                else:
+                    tracker += 1
+        
+        l = sorted(l, key=lambda x: int(x[1]), reverse=True)
+        print(l)
+        l2 = []
+        # store the top 3 score to the file
+        with open('ranks.txt', 'w') as file:
+            for i in range(3):
+                file.write(l[i][0] + '\n')
+                file.write(l[i][1] + '\n')
+                l2.append(l[i][0])
+                l2.append(l[i][1])
+
+        # update the gui
+        element_names = ['label_rank1_name', 'label_rank1_score', 'label_rank2_name', 'label_rank2_score', 'label_rank3_name', 'label_rank3_score']
+        for i in range(len(l2)):
+            target = "name"
+            if i % 2:
+                target = "score"
+            self.dash_board[element_names[i]].setText(target+': '+l2[i])
+
     def reset(self):
         self.math_battle["label_score"].setText('0')
         self.math_battle["label_expression"].setText("XXXX")
