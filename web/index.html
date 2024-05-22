@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Battle</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Math Battle</h1>
+        <div id="game">
+            <p id="welcome-message" class="mb-4">Welcome to Math Game!</p>
+            <p id="instruction" class="mb-4">You have 5 seconds to solve each expression.</p>
+            <div id="expression" class="mb-4"></div>
+            <div id="timer" class="mb-4"></div>
+            <input type="text" id="answer" class="form-control mb-4" placeholder="Your answer">
+            <button id="submit-btn" class="btn btn-primary mb-4">Submit</button>
+            <p id="result-message" class="mb-4"></p>
+            <p id="score" class="mb-4"></p>
+        </div>
+        <button id="play-again-btn" class="btn btn-success">Play Again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

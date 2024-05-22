@@ -1,0 +1,11 @@
+body {
+    background-color: blanchedalmond;
+}
+
+#game {
+    display: none;
+}
+
+#play-again-btn {
+    display: none;
+}
